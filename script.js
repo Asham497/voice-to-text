@@ -86,3 +86,4 @@ document.getElementById('clearBtn').onclick = () => {
     status.textContent = 'Cleared';
 };
 
+
