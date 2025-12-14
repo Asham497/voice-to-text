@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Task 1 - Speech to Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Internship Task 1</h1>
+    <p>A colorful and responsive website for speech recognition</p>
+</header>
+
+<div class="container">
+    <label for="language">Select Language:</label>
+    <select id="language">
+        <option value="en-IN">English (India)</option>
+        <option value="ta-IN">Tamil</option>
+        <option value="te-IN">Telugu</option>
+        <option value="kn-IN">Kannada</option>
+        <option value="ml-IN">Malayalam</option>
+        <option value="mr-IN">Marathi</option>
+        <option value="bn-IN">Bengali</option>
+        <option value="gu-IN">Gujarati</option>
+        <option value="pa-IN">Punjabi</option>
+        <option value="or-IN">Odia</option>
+    </select>
+
+    <label>Transcription</label>
+    <textarea id="output" placeholder="Click Start and begin speaking..."></textarea>
+
+    <div class="controls">
+        <button id="startBtn" class="start">Start Listening</button>
+        <button id="stopBtn" class="stop" disabled>Stop</button>
+        <button id="copyBtn" class="copy">Copy</button>
+        <button id="clearBtn" class="copy">Clear</button>
+    </div>
+
+    <div class="status" id="status">Idle</div>
+
+    <div class="listening-box" id="listeningBox">
+        <div class="wave">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <span class="listen-text">Listening…</span>
+    </div>
+</div>
+
+<footer>
+    © 2025 MyWebsite | Internship Project
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
