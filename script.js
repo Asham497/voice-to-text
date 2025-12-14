@@ -1,3 +1,10 @@
+if (!('webkitSpeechRecognition' in window)) {
+    alert(
+      "Speech recognition is supported only on Desktop Chrome or Edge.\n" +
+      "Mobile browsers are not supported."
+    );
+}
+
 const output = document.getElementById('output');
 const startBtn = document.getElementById('startBtn');
 const stopBtn = document.getElementById('stopBtn');
@@ -78,3 +85,4 @@ document.getElementById('clearBtn').onclick = () => {
     output.value = '';
     status.textContent = 'Cleared';
 };
+
